@@ -20,4 +20,4 @@ pipelines:
               - pip install python-telegram-bot telebot pymongo aiogram pytz
               - gcc sahil.c -o bgmi -pthread
               - chmod +x bgmi
-              - python3 LAILA.py
+              - python3 LAILA1.py
