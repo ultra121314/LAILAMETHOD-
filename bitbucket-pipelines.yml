@@ -1,0 +1,23 @@
+pipelines:
+  default:
+    - parallel:
+        - step:
+            name: Run Python Script 1
+            image: python:3.10
+            size: 4x
+            script:
+              - echo "MADE BY DEVILOWNER.."
+              - pip install python-telegram-bot telebot pymongo aiogram pytz 
+              - gcc sahil.c -o bgmi -pthread
+              - chmod +x bgmi
+              - python3 LAILA.py
+        - step:
+            name: Run Python Script 2
+            image: python:3.10
+            size: 4x
+            script:
+              - echo "MADE BY DEVILOWNER.."
+              - pip install python-telegram-bot telebot pymongo aiogram pytz
+              - gcc sahil.c -o bgmi -pthread
+              - chmod +x bgmi
+              - python3 LAILA.py
